@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Gamificación</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<style>
+		.container{
+			display: flex;
+			font-family: 'Roboto', sans-serif;
+			background-color: aqua;
+		}
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="preguntas">
+			<ol type="">
+				<li>Fase de preparaciones preliminares</li>
+				<li>Fase de inicio del juego instruccional</li>
+				<li>El uso multidisciplinar de la simulación y el juego arranca en las décadas</li>
+				<li>Nombre de un componente</li>
+				<li>Nombre de una mecánica</li>
+			</ol>
+
+        </div>
+        <div class="respuestas">
+			<ol type="a">
+				<li> Determinar si el juego instruccional se ajusta a los objetivos académicos</li>
+				<li> Los alumnos conocen las reglas y distribuyan sus roles</li>
+				<li> 1950 y 1960</li>
+				<li> Avatar</li>
+				<li> Niveles</li>
+			</ol>
+
+        </div>
+	</div>
+	<script>
+		function setup(){
+
+		}
+		function draw(){
+			document.getElementsByClassName("container").style.backgroundColor = getRandomColor();
+			console.log("hola");
+		}
+		function getRandomColor() {
+			var letters = '0123456789ABCDEF';
+			var color = '#';
+			for (var i = 0; i < 6; i++) {
+				color += letters[Math.floor(Math.random() * 16)];
+			}
+			return color;
+		}	
+	</script>
+</body>
+</html>

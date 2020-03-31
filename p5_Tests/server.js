@@ -5,8 +5,8 @@ var folderName = 'seekLetters';
 /*Express es una aplicacion web que nos permite hacer un web server que hostee nuestro proyecto (codigos)*/
 var express = require('express'); //No olvidar de instalar express con: npm install express --save
 var app = express();
-var server = app.listen(3000);//Mi programa estara en el sgte link -> localhost:3000
-//var server = app.listen(3000,'http://192.168.100/');
+var server = app.listen(8080);//Mi programa estara en el sgte link -> localhost:3000
+//var server = app.listen(8080,'http://192.168.100/');
 
 app.use(express.static(folderName));
 
