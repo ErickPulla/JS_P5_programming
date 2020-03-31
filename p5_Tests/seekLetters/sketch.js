@@ -1,7 +1,7 @@
 //background: 60,60,60
 //LettersShape: 250,210,210
 let ip = "http://172.19.72.204:3000";
-let name = 'HOLA';
+let name = 'DIANA';
 let particles = [];
 let c = 0;
 function loadParticles(pointsArr){
